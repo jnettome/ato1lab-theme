@@ -3,3 +3,10 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
+
+.default-logo {
+    width: 182px;
+    height: 173px;
+
+    background: url("/images/main-logo.png") no-repeat;
+}
