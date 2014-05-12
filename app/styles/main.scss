@@ -10,6 +10,7 @@ $link-color: #666;
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
+// Main Sidebar
 .sidebar {
     padding-top: 40px;
 
@@ -24,6 +25,7 @@ $link-color: #666;
     }
 }
 
+// Default logo replacement
 .main-logo {
     margin-left: auto;
     margin-right: auto;
@@ -38,6 +40,7 @@ $link-color: #666;
     }
 }
 
+// Cover Picture Layout
 .cover-picture {
     height: 431px;
 
@@ -61,14 +64,22 @@ $link-color: #666;
         left: 40px;
 
         h1 {
-            a {}
+            a {
+                &:hover {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
             small {
                 display: block;
             }
         }
 
         .more {
-
+            &:hover {
+                text-decoration: none;
+                color: #000;
+            }
         }
     }
 }
