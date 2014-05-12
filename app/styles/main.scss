@@ -1,12 +1,30 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
+$headings-font-family: "Barbedor";
+$font-family-monospace: "Courier New",Menlo, Monaco, Consolas, monospace;
+$font-family-base: $font-family-monospace;
+
+$link-color: #666;
+
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
-.default-logo {
+.sidebar {
+    nav.language-selector {
+        a.current {
+            font-weight: bold;
+        }
+    }
+}
+
+.main-logo {
     width: 182px;
     height: 173px;
 
     background: url("/images/main-logo.png") no-repeat;
+
+    a {
+        @include text-hide();
+    }
 }

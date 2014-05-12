@@ -32,8 +32,38 @@
     </head>
     <body>
 
-        <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 sidebar text-center" role="navigation">
 
+                    <nav class="language-selector">
+                        <a href="#" class="current" title="view english page">english</a>
+                        /
+                        <a href="#" title="ver página em português">português</a>
+                    </nav>
+
+                    <p class="text-center"><h2 class="main-logo">
+                        <a href="#">ato1lab</a>
+                    </h2></p>
+
+                    <nav class="main-menu">
+                        <a href="#">news</a>
+                        <a href="#">profiles</a>
+                        <a href="#">contact</a>
+                        <a href="#">links</a>
+                        <a href="#">support</a>
+                    </nav>
+
+                    <h3>Works</h3>
+                    <nav class="works">
+                        <a href="#">Life before Life</a>
+                        <a href="#">Samuel Lipsum</a>
+                    </nav>
+
+                </div>
+
+                <div class="col-md-9"><!-- Main content --></div>
+            </div>
         </div>
 
 
@@ -50,6 +80,19 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-19971072-9');ga('send','pageview');
+        </script>
+
+        <script type="text/javascript">
+            (function() {
+                var path = '//easy.myfonts.net/v2/js?sid=135535(font-family=Barbedor)&key=6dQemeGu9s',
+                    protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+                    trial = document.createElement('script');
+                trial.type = 'text/javascript';
+                trial.async = true;
+                trial.src = protocol + path;
+                var head = document.getElementsByTagName("head")[0];
+                head.appendChild(trial);
+            })();
         </script>
 
         <!-- build:js scripts/plugins.js -->
