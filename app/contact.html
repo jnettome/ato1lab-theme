@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>home | ato1lab.com</title>
+        <title>contact | ato1lab.com</title>
 
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
@@ -16,8 +16,8 @@
 
         <meta property="og:locale" content="en_US">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="ato1lab.com">
-        <meta property="og:description" content="our brand new website">
+        <meta property="og:title" content="contact | ato1lab.com">
+        <meta property="og:description" content="contact us">
         <meta property="og:url" content="http://ato1lab.com">
         <meta property="og:site_name" content="ato1lab">
         <meta property="og:image" content="http://ato1lab.com/favicon.ico">
@@ -29,6 +29,8 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+
+        <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp&#038;sensor=false&#038;ver=1"></script>
     </head>
     <body>
 
@@ -50,7 +52,7 @@
                         <li><a href="/news.html">news</a></li>
                         <li><a href="/profiles.html">profiles</a></li>
                         <li><a href="/support.html">support</a></li>
-                        <li><a href="/contact.html">contact</a></li>
+                        <li class="active"><a href="/contact.html">contact</a></li>
                     </ul>
 
                     <h3>WORKS</h3>
@@ -61,14 +63,68 @@
 
                 </div>
 
-                <div class="col-md-9 cover-picture index">
-                    <div class="caption">
-                        <h1>
-                            <a href="/lifebeforelife.html">Life before Life</a>
-                            <small>our latest work</small>
-                        </h1>
-                        <a href="/lifebeforelife.html" class="more">see more</a>
+                <div class="col-md-9 content contact" role="main">
+                    <h1>CONTACT US</h1>
+
+                    <address>
+                        <strong>ato1lab instalações teatro e arte</strong><br>
+                        Alameda Dom Pedro II, 41 #3<br>
+                        Curitiba, Brasil, 80420-060<br/>
+                        +55 41 9953 6462<br>
+                        +55 41 9953 6577
+                    </address>
+
+                    <address>
+                        <strong>Email</strong><br>
+                        <a href="mailto:#">info@ato1lab.com</a>
+                    </address>
+
+                    <address>
+                        <strong>Skype</strong><br>
+                        <a href="skype:#">ato1lab</a>
+                    </address>
+
+                    <div class="map">
+                        <div style="height: 300px;" id="map"></div>
                     </div>
+
+                    <script type="text/javascript">
+                        function initialize() {
+                            var map;
+                            var brooklyn = new google.maps.LatLng(parseFloat("-25.43659"), parseFloat("-49.282228"));
+
+                            var stylez = [
+                                {
+                                  featureType: "all",
+                                  elementType: "all",
+                                  stylers: [
+                                    { saturation: -100 } // <-- THIS
+                                  ]
+                                }
+                            ];
+
+                            var mapOptions = {
+                                zoom: parseInt("16"),
+                                center: brooklyn,
+                                mapTypeControlOptions: {
+                                     mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tehgrayz']
+                                }
+                            };
+
+                            map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                            var mapType = new google.maps.StyledMapType(stylez, { name:"Grayscale" });
+                            map.mapTypes.set('tehgrayz', mapType);
+                            map.setMapTypeId('tehgrayz');
+                            marker = new google.maps.Marker({
+                                title : "Alameda Dom Pedro II, 41",
+                                position: brooklyn,
+                                map: map
+                            });
+                        }
+                        initialize();
+                    </script>
+
                 </div>
             </div>
         </div>
