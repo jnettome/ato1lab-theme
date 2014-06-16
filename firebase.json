@@ -1,0 +1,9 @@
+{
+  "firebase": "ato1lab",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    ".*",
+    "**/node_modules/**"
+  ]
+}
