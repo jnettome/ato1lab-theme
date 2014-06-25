@@ -33,10 +33,9 @@
         <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp&#038;sensor=false&#038;ver=1"></script>
     </head>
     <body>
-
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-md-3 sidebar text-center" role="navigation">
+                <div class="col-md-2 sidebar text-center" role="navigation">
 
                     <nav class="language-selector">
                         <a href="#" class="current" title="view english page">english</a>
@@ -48,23 +47,28 @@
                         <a href="/index.html">ato1lab</a>
                     </h2>
 
-                    <ul class="main-menu nav nav-stacked">
-                        <li><a href="/news.html">news</a></li>
+                    <ul class="main-menu text-left nav nav-stacked">
                         <li><a href="/profiles.html">profiles</a></li>
                         <li><a href="/support.html">support</a></li>
-                        <li class="active"><a href="/contact.html">contact</a></li>
+                        <li><a href="/contact.html">contact</a></li>
                     </ul>
 
-                    <h3>WORKS</h3>
-                    <ul class="works nav nav-stacked">
-                        <li><a href="/lifebeforelife.html">Life before Life</a></li>
-                        <li><a href="/lifebeforelife.html">Samuel Lipsum</a></li>
+                    <p class="text-left">
+                        <h3>WORKS</h3>
+                    </p>
+                    <ul class="works nav nav-stacked text-left">
+                        <li><a href="/lifebeforelife.html">lifebeforelife</a></li>
+                    </ul>
+
+                    <ul class="social nav nav-stacked text-left">
+                        <li><a href="#">vimeo</a></li>
+                        <li><a href="#">facebook</a></li>
                     </ul>
 
                 </div>
 
-                <div class="col-md-9 content contact" role="main">
-                    <h1>CONTACT US</h1>
+                <div class="col-md-9 col-md-offset-1 content contact" role="main">
+                    <h2>CONTACT US</h2>
 
                     <address>
                         <strong>ato1lab instalações teatro e arte</strong><br>
@@ -75,17 +79,19 @@
                     </address>
 
                     <address>
-                        <strong>Email</strong><br>
+                        <strong>Email</strong>
                         <a href="mailto:#">info@ato1lab.com</a>
                     </address>
 
                     <address>
-                        <strong>Skype</strong><br>
+                        <strong>Skype</strong>
                         <a href="skype:#">ato1lab</a>
                     </address>
 
+                    <hr>
+
                     <div class="map">
-                        <div style="height: 300px;" id="map"></div>
+                        <div style="height: 600px;" id="map"></div>
                     </div>
 
                     <script type="text/javascript">
@@ -125,7 +131,6 @@
                         initialize();
                     </script>
 
-                </div>
             </div>
         </div>
 

@@ -78,6 +78,16 @@ ul.social {
         font-size: 24px;
     }
 
+    &.contact {
+        address {
+            margin: 0 auto;
+        }
+
+        hr {
+            margin-top: 40px;
+        }
+    }
+
 }
 
 // Cover Picture Layout
