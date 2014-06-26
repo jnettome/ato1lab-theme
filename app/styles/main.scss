@@ -1,18 +1,20 @@
+// Fonts & Typography
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-
 $headings-font-family: "Barbedor";
 $font-family-monospace: "Courier New",Menlo, Monaco, Consolas, monospace;
 $font-family-base: $font-family-monospace;
 
+// Navigation
 $nav-link-padding: 2px 8px;
 $nav-link-hover-bg: transparent;
 
+// Colors
 $link-color: #666;
 $hr-border: #666;
 
+// Carousel
 $carousel-control-color:                      #000;
 $carousel-control-width:                      10%;
-
 $carousel-indicator-active-bg:                #000;
 $carousel-indicator-border-color:             #000;
 
@@ -20,46 +22,12 @@ $carousel-indicator-border-color:             #000;
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
-.carousel-control {
-  &.left {
-    background: none;
-  }
-  &.right {
-    background: none;
-  }
-}
-
+// Fix container at left
 .container {
     margin-left: 0;
 }
 
-.main-menu, ul.works, ul.social {
-    padding-left: 40px;
-}
-
-.profiles {
-    h3 {
-        font-family: $font-family-monospace;
-        font-size: 16px;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-}
-
-.portfolio-single {
-    h2 {
-        font-size: 24px;
-        text-transform: uppercase;
-        font-weight: bold;
-        margin-bottom: 0;
-    }
-}
-
-ul.social {
-    margin-top: 120px
-}
-
-// Main Sidebar
+// Navigation bar
 .sidebar {
     padding-top: 40px;
 
@@ -71,26 +39,34 @@ ul.social {
         }
     }
 
+    // Default logo replacement
+    .main-logo {
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 182px;
+        height: 173px;
+
+        background: url("/images/main-logo.png") no-repeat;
+
+        a {
+            @include text-hide();
+        }
+    }
+
+    .main-menu, ul.works, ul.social {
+        padding-left: 40px;
+    }
+
     h3 {
         margin-top: 120px;
         margin-left: 10px;
         font-size: 24px;
         font-weight: bold;
     }
-}
 
-// Default logo replacement
-.main-logo {
-    margin-left: auto;
-    margin-right: auto;
-
-    width: 182px;
-    height: 173px;
-
-    background: url("/images/main-logo.png") no-repeat;
-
-    a {
-        @include text-hide();
+    ul.social {
+        margin-top: 120px
     }
 }
 
@@ -100,6 +76,25 @@ ul.social {
     h2 {
         font-weight: bold;
         font-size: 24px;
+    }
+
+    // Pages styling
+    &.profiles {
+        h3 {
+            font-family: $font-family-monospace;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+
+    &.portfolio-single {
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
     }
 
     &.contact {
@@ -169,15 +164,21 @@ ul.social {
     }
 }
 
+// Carousel Navigation
+.carousel-control {
+    &.left, &.right {
+        background: none;
+    }
+}
+
 .carousel-indicators {
     bottom: -40px;
 }
 
-.carousel-inner, .carousel-inner .item, .carousel-inner .item img {
-    max-height: 800px;
-    text-align: center;
-}
-
 .carousel-inner .item img {
     margin: 0 auto;
+}
+
+.carousel-inner, .carousel-inner .item, .carousel-inner .item img {
+    max-height: 800px;
 }
