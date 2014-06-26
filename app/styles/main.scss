@@ -13,10 +13,10 @@ $link-color: #666;
 $hr-border: #666;
 
 // Carousel
-$carousel-control-color:                      #000;
-$carousel-control-width:                      10%;
-$carousel-indicator-active-bg:                #000;
-$carousel-indicator-border-color:             #000;
+$carousel-control-color: #000;
+$carousel-control-width: 10%;
+$carousel-indicator-active-bg: #000;
+$carousel-indicator-border-color: #000;
 
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
@@ -29,10 +29,11 @@ $carousel-indicator-border-color:             #000;
 
 // Navigation bar
 .sidebar {
+    text-align: left;
     padding-top: 40px;
 
     nav.language-selector {
-        margin-left: -20px;
+        margin-left: 25px;
         font-size: 12px;
         a.current {
             font-weight: bold;
@@ -41,27 +42,24 @@ $carousel-indicator-border-color:             #000;
 
     // Default logo replacement
     .main-logo {
-        margin-left: auto;
-        margin-right: auto;
-
-        width: 182px;
-        height: 173px;
-
-        background: url("/images/main-logo.png") no-repeat;
-
         a {
             @include text-hide();
+            width: 182px;
+            height: 173px;
+            background: url("/images/main-logo.png") no-repeat;
+            display: block;
         }
     }
 
     .main-menu, ul.works, ul.social {
-        padding-left: 40px;
+        padding-left: 38px;
     }
 
     h3 {
         margin-top: 120px;
-        margin-left: 10px;
-        font-size: 24px;
+        margin-left: 47px;
+        margin-bottom: -5px;
+        font-size: 22px;
         font-weight: bold;
     }
 
@@ -73,6 +71,7 @@ $carousel-indicator-border-color:             #000;
 // Main content
 .content {
     padding-top: 20px;
+
     h2 {
         font-weight: bold;
         font-size: 24px;
