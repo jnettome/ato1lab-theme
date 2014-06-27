@@ -194,6 +194,12 @@ $carousel-indicator-border-color: #999;
 
 .carousel-inner .item img {
     margin: 0 auto;
+    max-width: 700px;
+    max-height: 480px;
+}
+
+.carousel-inner > .item > a > img {
+    max-width: 700px;
 }
 
 .carousel-inner .item iframe {
