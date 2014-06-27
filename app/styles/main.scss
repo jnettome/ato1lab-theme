@@ -111,6 +111,12 @@ $carousel-indicator-border-color: #000;
             font-weight: bold;
             margin: 0 auto;
         }
+
+        .portfolio-info {
+            hr {
+                margin-top: 145px;
+            }
+        }
     }
 
     &.contact {
@@ -139,21 +145,42 @@ $carousel-indicator-border-color: #000;
 
 }
 
+// Carousel
+.carousel {
+    padding-top: 10px;
+}
 // Carousel Navigation
 .carousel-control {
+    padding-top: 10px;
+
     &.left, &.right {
         background: none;
     }
 }
 
 .carousel-indicators {
-    bottom: -40px;
+    bottom: -50px;
+}
+
+.carousel-inner .item {
+    height: 480px;
 }
 
 .carousel-inner .item img {
     margin: 0 auto;
 }
 
+.carousel-inner .item iframe {
+    margin: 30px auto 20px;
+
+    width: 700px;
+    height: 400px;
+}
+
+.carousel-inner .item .text-carousel {
+    margin: 30px 90px;
+}
+
 .carousel-inner, .carousel-inner .item, .carousel-inner .item img {
-    max-height: 800px;
+    max-height: 480px;
 }
