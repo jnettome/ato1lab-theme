@@ -87,6 +87,11 @@ $carousel-indicator-border-color: #000;
         font-size: 24px;
     }
 
+    // Cover Picture Layout
+    &.index2 {
+        padding-top: 40px;
+    }
+
     // Pages styling
     &.profiles {
         h3 {
@@ -98,11 +103,13 @@ $carousel-indicator-border-color: #000;
     }
 
     &.portfolio-single {
+        padding-top: 40px;
+
         h2 {
             font-size: 24px;
             text-transform: uppercase;
             font-weight: bold;
-            margin-bottom: 0;
+            margin: 0 auto;
         }
     }
 
@@ -122,55 +129,6 @@ $carousel-indicator-border-color: #000;
         }
     }
 
-}
-
-// Cover Picture Layout
-.cover-picture {
-    height: 431px;
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
-    position: relative;
-
-    &.index {
-        background-image: url("/images/portfolio-1/1.jpg");
-    }
-
-    .caption {
-        width: 60%;
-        padding: 10px 20px;
-        position: absolute;
-
-        bottom: 40px;
-        left: 40px;
-
-        h1 {
-            a {
-                color: #fff;
-                text-shadow: 1px 1px 3px #000;
-                font-weight: bold;
-
-                &:hover {
-                    text-decoration: none;
-                    opacity: 0.7;
-                }
-            }
-            small {
-                display: block;
-            }
-        }
-
-        .more {
-            &:hover {
-                text-decoration: none;
-                opacity: 0.7;
-                color: #fff;
-                text-shadow: 1px 1px 3px #000;
-            }
-        }
-    }
 }
 
 // Carousel Navigation
