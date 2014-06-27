@@ -155,6 +155,28 @@ $carousel-indicator-border-color: #000;
 
     &.left, &.right {
         background: none;
+        .arrow-left {
+            background: url('/images/arrow-left.png');
+            width: 12px;
+            height: 63px;
+            position: absolute;
+            top: 220px;
+            z-index: 5;
+            display: inline-block;
+            left: 50%;
+            margin-left: -10px;
+        }
+        .arrow-right {
+            background: url('/images/arrow-right.png');
+            width: 16px;
+            height: 63px;
+            position: absolute;
+            top: 220px;
+            z-index: 5;
+            display: inline-block;
+            right: 50%;
+            margin-right: -10px;
+        }
     }
 }
 
