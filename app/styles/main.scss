@@ -1,6 +1,7 @@
 // Fonts & Typography
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-$fa-font-path:   "/bower_components/font-awesome/fonts/";
+// $fa-font-path:   "/bower_components/font-awesome/fonts/";
+$fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts" !default; // for referencing Bootstrap CDN font files
 $headings-font-family: "Barbedor";
 $font-family-monospace: "Courier New",Menlo, Monaco, Consolas, monospace;
 $font-family-base: $font-family-monospace;
