@@ -118,7 +118,7 @@ $carousel-indicator-border-color: #999;
 
         .portfolio-info {
             hr {
-                margin-top: 145px;
+                margin-top: 170px;
             }
         }
     }
@@ -153,12 +153,14 @@ $carousel-indicator-border-color: #999;
 .carousel {
     padding-top: 10px;
 }
+
 // Carousel Navigation
 .carousel-control {
     padding-top: 10px;
 
     &.left, &.right {
         background: none;
+
         .arrow-left {
             background: url('/images/arrow-left.png');
             width: 12px;
@@ -170,6 +172,7 @@ $carousel-indicator-border-color: #999;
             left: 50%;
             margin-left: -10px;
         }
+
         .arrow-right {
             background: url('/images/arrow-right.png');
             width: 12px;
