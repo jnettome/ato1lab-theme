@@ -1,5 +1,6 @@
 // Fonts & Typography
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$fa-font-path:   "/bower_components/font-awesome/fonts/";
 $headings-font-family: "Barbedor";
 $font-family-monospace: "Courier New",Menlo, Monaco, Consolas, monospace;
 $font-family-base: $font-family-monospace;
@@ -20,6 +21,7 @@ $carousel-indicator-border-color: #000;
 
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
 // Fix container at left
@@ -51,6 +53,18 @@ $carousel-indicator-border-color: #000;
         }
     }
 
+    ul.social {
+        // margin-top: 20px;
+        li {
+            display: inline-block;
+            font-size: 24px;
+
+            &:last-child {
+                margin-left: -10px;
+            }
+        }
+    }
+
     .main-menu, ul.works, ul.social {
         padding-left: 38px;
     }
@@ -61,10 +75,6 @@ $carousel-indicator-border-color: #000;
         margin-bottom: -5px;
         font-size: 22px;
         font-weight: bold;
-    }
-
-    ul.social {
-        margin-top: 120px
     }
 }
 
