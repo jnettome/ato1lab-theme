@@ -1,7 +1,6 @@
 // Fonts & Typography
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-// $fa-font-path:   "/bower_components/font-awesome/fonts/";
-$fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts" !default; // for referencing Bootstrap CDN font files
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.1.0/fonts";
 $headings-font-family: "Barbedor";
 $font-family-monospace: "Courier New",Menlo, Monaco, Consolas, monospace;
 $font-family-base: $font-family-monospace;
@@ -95,6 +94,10 @@ $carousel-indicator-border-color: #999;
 
     // Pages styling
     &.profiles {
+        hr {
+            margin-top: 30px;
+        }
+
         h3 {
             font-family: $font-family-monospace;
             font-size: 16px;
@@ -126,7 +129,7 @@ $carousel-indicator-border-color: #999;
         }
 
         hr {
-            margin-top: 10px;
+            margin-top: 40px;
         }
 
         .map {
