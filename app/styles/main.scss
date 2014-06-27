@@ -119,7 +119,15 @@ $carousel-indicator-border-color: #000;
         }
 
         hr {
+            margin-top: 10px;
+        }
+
+        .map {
             margin-top: 40px;
+
+            #map {
+                height: 410px;
+            }
         }
     }
 
